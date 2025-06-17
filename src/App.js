@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { FileSystemProvider } from "./context/FileSystemContext";
+import SideBar from "./components/SideBar";
+import FileViewer from "./components/FileViewer";
+import ToolBar from "./components/ToolBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FileSystemProvider>
+      <div className="app-container">
+        <SideBar />
+
+        <div className="main-content">
+          <ToolBar />
+          <FileViewer />
+        </div>
+      </div>
+    </FileSystemProvider>
   );
 }
 
