@@ -15,8 +15,8 @@ return(
 
     <div className="file-viewer">
       <h1>{selectedNode.name}</h1>
-        <h3>{selectedNode?.children[0].name}</h3>
-        <p>{selectedNode?.children[0].content}</p>
+        <h3>{selectedNode?.children?.[0].name}</h3>
+        <p>{selectedNode?.children?.[0].content}</p>
     </div>
 )
 }}

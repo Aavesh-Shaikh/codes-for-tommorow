@@ -28,7 +28,7 @@ const FileNode = ({ node }) => {
         )}
         <span>{node?.name}</span>
       </div>
-      {expanded && node.children && (
+      {expanded && node?.children && (
         <div className="child-nodes">
           {node?.children.map((childNode) => (
             console.log(childNode,"childNode"),

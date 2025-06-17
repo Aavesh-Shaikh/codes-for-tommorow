@@ -100,7 +100,7 @@ const ToolBar = () => {
   return (
     <>
       <div className="toolbar">
-        <button onCllick={()=>{handleCreate("folder")}}>Create Folder</button>
+        <button onClick={()=>{handleCreate("folder")}}>Create Folder</button>
         <button onClick={()=>{handleCreate("file")}}>Create File</button>
         <button onClick={handleRename}>Rename File</button>
         <button onClick={handleDelete}>Delete File</button>
